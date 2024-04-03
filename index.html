@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beyza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #051b1d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(72, 3, 151, 0.1);
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        audio {
+            display: block;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hoş Geldiniz!</h1>
+        <img src="kralll.jpg" alt="Resim açıklaması">
+        <audio id="muzik" controls autoplay>
+            <source src="xd.mp3" type="audio/mpeg">
+            Tarayıcınız bu ses formatını desteklemiyor.
+        </audio>
+        <button onclick="playMusic()">Müziği Başlat</button>
+        <button onclick="surprise()">Sürprize Bak</button>
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('muzik');
+            audio.play();
+        }
+
+        function surprise() {
+            // Sürpriz mesajı
+            alert("Sürprize bak!");
+
+            // Yönlendirilecek sayfanın URL'sini belirtiyoruz
+            var url = "surprize.html";
+
+            // Sayfayı yönlendiriyoruz
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

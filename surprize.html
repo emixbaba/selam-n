@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mal beyza söaslöadsöld</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hoş Geldiniz!</h1>
+        <p>evet bu mal beyza SLDPFSFPÖFÖFDSÖF.</p>
+        <img src="krall.jpg" alt="Resim açıklaması">
+        <audio id="muzik" controls autoplay>
+            <source src="errrrri.mp3" type="audio/mpeg">
+            Tarayıcınız bu ses formatını desteklemiyor.
+        </audio>
+        <button onclick="playMusic()">Müziği Başlat</button>
+    </div>
+<script>
+        function playMusic() {
+            var audio = document.getElementById('muzik');
+            audio.play();
+        }     
+</script> 
+</html>
